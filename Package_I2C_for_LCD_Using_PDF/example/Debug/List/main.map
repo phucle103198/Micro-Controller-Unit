@@ -1,0 +1,71 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+R                                                                                 0x0260       4
+G                                                                                 0x0264       4
+B                                                                                 0x0268       4
+colors                                                                            0x026C      36
+twi_tx_index                                                                      0x0290       1
+twi_rx_index                                                                      0x0291       1
+twi_result                                                                        0x0292       1
+_seed                                                                             0x0293       4
+slave_address                                                                     0x0297       1
+twi_tx_buffer                                                                     0x0298       2
+bytes_to_tx                                                                       0x029A       1
+twi_rx_buffer                                                                     0x029B       2
+bytes_to_rx                                                                       0x029D       1
+twi_rx_buffer_size                                                                0x029E       1
+twi_slave_rx_handler                                                              0x029F       2
+twi_slave_tx_handler                                                              0x02A1       2
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+count                                                                             R4,R5        2
+ok                                                                                R2.0      1bit
+input                                                                             R7           1
+display                                                                           R6           1
+_rows                                                                             R9           1
+_cols                                                                             R8           1
+lcd_addr                                                                          R11          1
+twi_flag                                                                          R2.1      1bit
+twi_ready                                                                         R2.2      1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+initColor                                                                         0x0009C    109
+red_select                                                                        0x00109      3
+green_select                                                                      0x0010C      2
+blue_select                                                                       0x0010E      3
+ext_int0_isr                                                                      0x00111     15
+timer0_ovf_isr                                                                    0x00120      7
+do_f                                                                              0x00127     28
+read_color                                                                        0x00143    162
+main                                                                              0x001E5    162
+i2c_begin                                                                         0x00287      3
+i2c_send_start                                                                    0x0028A      7
+i2c_send_stop                                                                     0x00291      3
+i2c_send_add_rw                                                                   0x00294     18
+i2c_send_byte                                                                     0x002A6     11
+i2c_set_outputs                                                                   0x002B1     11
+lcd_begin                                                                         0x002BC     14
+lcd_send_cmd                                                                      0x002CA     13
+lcd_putchar                                                                       0x002D7     29
+lcd_puts                                                                          0x002F4     15
+lcd_gotoxy                                                                        0x00303     37
+put_buff_G101                                                                     0x00328     58
+_ftoe_G101                                                                        0x00362    213
+_print_G101                                                                       0x00437    538
+sprintf                                                                           0x00651     52
+ftoa                                                                              0x00685    201
+twi_int_handler                                                                   0x0074E    357
+strcpyf                                                                           0x008B3     13
+strlen                                                                            0x008C0     12
+strlenf                                                                           0x008CC     13
+ftrunc                                                                            0x008D9     49
+floor                                                                             0x0090A     23
