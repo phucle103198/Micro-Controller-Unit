@@ -1,0 +1,18 @@
+#ifndef __DHT11_H
+#define __DHT11_H
+
+#include <mega8.h>
+#include <delay.h>
+
+#pragma used+
+#define DDROUT        1
+#define DDRIN        0
+#define DHT_ER       0
+#define DHT_OK       1
+
+unsigned char DHT_GetTemHumi (unsigned char *tem,unsigned char *humi);
+#pragma used-
+
+#pragma library dht11_cvavr1.lib
+
+#endif

@@ -1,0 +1,83 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+str                                                                               0x01A8      20
+fuzzy_temp_lanh                                                                   0x01BC       4
+fuzzy_temp_vua                                                                    0x01C0       4
+fuzzy_temp_nong                                                                   0x01C4       4
+fuzzy_am                                                                          0x01C8       4
+fuzzy_thuong                                                                      0x01CC       4
+fuzzy_kho                                                                         0x01D0       4
+heso                                                                              0x01D4       9
+hesothuc                                                                          0x01DD       9
+hang                                                                              0x01E6       3
+cot                                                                               0x01E9       3
+Data                                                                              0x01EC      16
+_base_y                                                                           0x01FC       4
+_lcd_y                                                                            0x0200       1
+_lcd_maxx                                                                         0x0201       1
+_seed                                                                             0x0202       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+nn_trung_gian_up                                                                  R2.0      1bit
+nn_trung_gian_down                                                                R2.1      1bit
+nn_trung_gian_mode                                                                R2.2      1bit
+up_danhan                                                                         R2.3      1bit
+down_danhan                                                                       R2.4      1bit
+mode_danhan                                                                       R2.5      1bit
+tocdo                                                                             R4,R5        2
+I_RH                                                                              R7           1
+I_TEMP                                                                            R6           1
+i_timer_2                                                                         R9           1
+state                                                                             R8           1
+c                                                                                 R11          1
+index                                                                             R10          1
+ok                                                                                R13          1
+_lcd_x                                                                            R12          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+mode_button                                                                       0x000C5     45
+up_button                                                                         0x000F2     35
+down_button                                                                       0x00115     35
+lanh                                                                              0x00138     32
+vua                                                                               0x00158     41
+nong                                                                              0x00181     31
+kho                                                                               0x001A0     32
+thuong                                                                            0x001C0     41
+am                                                                                0x001E9     31
+normal                                                                            0x00208     61
+setup                                                                             0x00245     37
+min_max                                                                           0x0026A     60
+tu_dong                                                                           0x002A6    281
+xu_ly_fuzzy                                                                       0x003BF     10
+usart_rx_isr                                                                      0x003C9     25
+xu_ly_chuoi                                                                       0x003E2     55
+send_to_app                                                                       0x00419     45
+timer0_ovf_isr                                                                    0x00446     44
+timer2_ovf_isr                                                                    0x00472      5
+main                                                                              0x00477    119
+_lcd_write_nibble_G100                                                            0x004EE     31
+_lcd_write_data                                                                   0x0050D     12
+lcd_gotoxy                                                                        0x00519     15
+lcd_clear                                                                         0x00528     11
+lcd_putchar                                                                       0x00533     25
+lcd_puts                                                                          0x0054C      8
+lcd_init                                                                          0x00554     43
+ftrunc                                                                            0x0057F     48
+floor                                                                             0x005AF     16
+DHT_GetTemHumi                                                                    0x005BF     91
+putchar                                                                           0x0061A      7
+puts                                                                              0x00621     12
+put_buff_G104                                                                     0x0062D     45
+_print_G104                                                                       0x0065A    281
+sprintf                                                                           0x00773     42
+strlen                                                                            0x0079D     11
+strlenf                                                                           0x007A8     12
